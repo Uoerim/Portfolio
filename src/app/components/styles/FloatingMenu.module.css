@@ -1,0 +1,40 @@
+.container {
+    width: calc(100% - 2em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    z-index: 1000;
+}
+
+
+.floatingMenu {
+    background-color: rgba(44, 44, 44, 0.356);
+    /* TODO Replace with CSS variable */
+    backdrop-filter: blur(10px) saturate(180%);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.floatingMenu.atTop {
+    backdrop-filter: none;
+    background: none;
+}
+
+.menuButton {
+    font-size: 0.8rem;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: white;
+    /*TODO: Replace with CSS variable */
+    z-index: 1;
+    
+}

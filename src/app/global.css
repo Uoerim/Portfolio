@@ -1,0 +1,35 @@
+:root{
+    --background-color: #0e071f;
+    --primary-color: #ac86ea; 
+    --secondary-color: #450d9f; 
+    --accent-color: #7c2cfd;
+    --text-color: #e4dbf1;
+    --available-color: #4bf54b;
+    --font-size: 16px; 
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.fascinate-font {
+    font-family: 'Fascinate', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.outfit-font {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
