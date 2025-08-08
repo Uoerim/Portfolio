@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './journeyScreen.module.css';
+import styles from './JourneyScreen.module.css';
 
 export default function JourneyScreen() {
     return (
