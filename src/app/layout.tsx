@@ -1,31 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Fascinate, Outfit } from "next/font/google";
+
 import "./global.css";
+import "./vt323.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const fascinate = Fascinate({
-  variable: "--font-fascinate",
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -45,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${geistSans.variable} ${geistMono.variable} ${fascinate.variable}`}>
+  <body className="vt323-font">
         {children}
       </body>
     </html>

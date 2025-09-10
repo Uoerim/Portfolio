@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import FloatingMenu from "@/app/components/FloatingMenu";
-import MainScreen from "@/app/components/MainScreen";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("Journey");
@@ -19,31 +17,9 @@ export default function Home() {
       overflowX: "hidden",
       paddingTop: "5rem",
       }}
-      className="outfit-font"  // TODO - Add Variable
+  className="vt323-font"
     >
-      <FloatingMenu onActiveIndexChange={handleActiveIndexChange} />
-      <MainScreen activeSection={activeSection} />
+      Hello
     </div>
   );
 }
-
-
-
-// //////// Components ////////
-
-// > Floating Menu
-// > Main Screen
-// > Footer
-
-
-// ////////////////////////////
-
-
-// ///////// Screens //////////
-// > Home
-// >>> Journey
-// >>> About
-// >>> Creations
-// >>> Thoughts
-// >>> Connect
-// ////////////////////////////
